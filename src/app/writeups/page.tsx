@@ -1,17 +1,17 @@
 import Image from "next/image";
 import tj from "@/assets/tjctf.png";
-import picoImg from "@/assets/picoctf.jpeg"
+import picoImg from "@/assets/picoctf.jpeg";
 export default function WriteupsPage() {
   return (
     <main className="min-h-screen p-8 bg-black text-white">
       <h1 className="text-4xl font-bold text-cyan-400">CTF Writeups</h1>
-      <ul className="mt-6 space-y-4 flex-col">
-        <li className="flex bg-blue-700">
+      <ul className="mt-6 space-y-4 flex-col w-1/2">
+        <li className="flex bg-[#1f1f1f]">
           <a
             href="/writeups/chall1"
             className="text-lg text-cyan-300 hover:underline"
           >
-            chall1
+            TJCTF 2025
           </a>
           <Image
             src={tj}
@@ -22,7 +22,7 @@ export default function WriteupsPage() {
           />
         </li>
 
-        <li className="flex bg-red-700">
+        <li className="flex bg-[#1f1f1f]">
           <a href="/writeups/chall2" className="text-lg text-cyan-300 hover:underline">
             chall2
           </a>
