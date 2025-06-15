@@ -24,8 +24,8 @@ export default function AboutPage() {
           </h1>
           <p className="text-lg leading-relaxed text-gray-300">
             We are the Chantilly High School CTF team passionate about solving cybersecurity challenges, 
-            learning new exploitation techniques, and writing detailed walkthroughs. Whether it&apos;s binary exploitation, 
-            web hacking, forensics, or crypto — we&apos;re here to capture flags and level up together.
+            learning new exploitation techniques, and helping others learn with us. Whether it&apos;s binary exploitation, 
+            web hacking, forensics, or crypto — we&apos;re here to capture flags and improve.
           </p>
         </section>
 
@@ -50,9 +50,10 @@ export default function AboutPage() {
 
             {/* glass */}
             <div className="absolute bottom-0 left-0 right-0 bg-black/30 backdrop-blur-md text-white px-6 py-4 rounded-b-xl">
-              <h3 className="text-xl font-semibold">CyberChargers Team</h3>
+              <h3 className="text-xl font-semibold">CyberChargers Advanced Team</h3>
               <p className="text-sm text-gray-200">
-                Our team tackles cybersecurity competitions, technical writeups, and collaborative research.
+                Our advanced team placed second in the 2025 Commonwealth CyberCup where we focused on web application security, network traffic analysis, 
+                log analysis, cryptography, reverse engineering, as well as lock-picking and live RFID hacking.
               </p>
             </div>
           </motion.div>
@@ -78,7 +79,7 @@ export default function AboutPage() {
           <div className="text-gray-300 text-md md:w-1/2">
             <h3 className="text-xl font-semibold text-[#9c27ff] mb-2">Challenge Mentality</h3>
             <p>
-              Every CTF challenge teaches us something new. We do&apos;t just solve — we break down what happened, why it worked, and how to do it better next time.
+              Every CTF challenge teaches us something new. We don&apos;t just solve — we break down what happened, why it worked, and how to do it better next time.
             </p>
           </div>
         </section>
