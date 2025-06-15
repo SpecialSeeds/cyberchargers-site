@@ -1,5 +1,6 @@
 import Image from "next/image";
 import tj from "@/assets/tjctf.png";
+import picoImg from "@/assets/picoctf.jpeg"
 export default function WriteupsPage() {
   return (
     <main className="min-h-screen p-8 bg-black text-white">
@@ -26,7 +27,7 @@ export default function WriteupsPage() {
             chall2
           </a>
           <Image
-            src="@/assets/picoctf.jpeg"
+            src={picoImg}
             alt="picoctf"
             width={50}
             height={50}
