@@ -12,12 +12,12 @@ export default function Home() {
         >
           About Us
         </a>
-        <a
+        {/*<a
           href="/writeups"
           className="inline-block mt-6 px-5 py-2 bg-[#9c27ff] hover:bg-[#b84dff] text-white rounded-md transition duration-150"
         >
           Writeups
-        </a>
+        </a>*/}
       </div>
     </main>
   );

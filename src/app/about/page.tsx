@@ -1,5 +1,8 @@
 'use client';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image'
+import advancedPhoto from '@/assets/team_advanced.jpg';
+import { motion } from 'framer-motion';
 
 export default function AboutPage() {
   const router = useRouter();
@@ -14,7 +17,7 @@ export default function AboutPage() {
       
       <div className="max-w-5xl mx-auto flex flex-col gap-12">
 
-        {/* Section: Heading & Intro */}
+        {/* yapping intro */}
         <section>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#9c27ff] tracking-tight mb-4">
             About CyberChargers
@@ -26,16 +29,37 @@ export default function AboutPage() {
           </p>
         </section>
 
-        {/* Section: Team Image */}
-        <section className="rounded-lg overflow-hidden border border-[#9c27ff]">
-          <img
-            src="/images/team-photo.jpg"
-            alt="CyberChargers team"
-            className="w-full h-auto object-cover"
-          />
+        {/* team pic */}
+        <section className="rounded-lg overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            className="relative w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-xl"
+          >
+            {/* image */}
+            <Image
+              src={advancedPhoto}
+              alt="CyberChargers Team"
+              width={1200}
+              height={700}
+              className="w-full h-auto object-cover"
+              priority
+            />
+
+            {/* glass */}
+            <div className="absolute bottom-0 left-0 right-0 bg-black/30 backdrop-blur-md text-white px-6 py-4 rounded-b-xl">
+              <h3 className="text-xl font-semibold">CyberChargers Team</h3>
+              <p className="text-sm text-gray-200">
+                Our team tackles cybersecurity competitions, technical writeups, and collaborative research.
+              </p>
+            </div>
+          </motion.div>
+
         </section>
 
-        {/* Section: What We Do */}
+        {/* yapping desc */}
         <section>
           <h2 className="text-2xl font-bold text-[#9c27ff] mb-4">What We Do</h2>
           <p className="text-md text-gray-300 leading-relaxed">
@@ -44,13 +68,13 @@ export default function AboutPage() {
           </p>
         </section>
 
-        {/* Section: Split Image + Challenge Mindset */}
+        {/* img */}
         <section className="flex flex-col md:flex-row gap-8 items-center">
-          <img
+          {/*<img
             src="/images/challenge-screenshot.png"
             alt="Solving a challenge"
             className="w-full md:w-1/2 rounded-lg border border-[#9c27ff]"
-          />
+          />*/}
           <div className="text-gray-300 text-md md:w-1/2">
             <h3 className="text-xl font-semibold text-[#9c27ff] mb-2">Challenge Mentality</h3>
             <p>
@@ -59,13 +83,13 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* 🏆 Section: Competitions & Awards */}
-        <section>
+        {/* awards */}
+        {/*<section>
           <h2 className="text-2xl font-bold text-[#9c27ff] mb-4">Competitions & Awards</h2>
           <ul className="list-disc pl-6 space-y-2 text-gray-300 text-md">
             <li><strong>temp:   </strong>temp</li>
           </ul>
-        </section>
+        </section>*/}
       </div>
     </main>
   );
