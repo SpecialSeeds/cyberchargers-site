@@ -1,33 +1,50 @@
+
 import Image from "next/image";
-import tj from "@/assets/tjctf.png";
-import picoImg from "@/assets/picoctf.jpeg";
+import picoPic from "@/assets/picoctf.jpeg";
+import tjPic from "@/assets/tjctf.png";
 export default function WriteupsPage() {
   return (
     <main className="min-h-screen p-8 bg-black text-white">
       <h1 className="text-4xl font-bold text-cyan-400">CTF Writeups</h1>
       <ul className="mt-6 space-y-4 flex-col w-1/2">
         <li className="flex bg-[#1f1f1f]">
-          <a
-            href="/writeups/chall1"
-            className="text-lg text-cyan-300 hover:underline"
-          >
-            TJCTF 2025
-          </a>
+          <ul className="flex-col space-y-1 ">
+            <a
+              href="/"
+              className="text-lg text-cyan-300 hover:underline"
+            >
+              TJCTF 2025
+            </a>
+            <br></br>
+            <a
+              href="/"
+              className="text-sm text-cyan-300 hover:underline"
+            >
+              TJCTF was one of the competitions of all time. definitely a
+              shocker
+            </a>
+          </ul>
           <Image
-            src={tj}
+            src={tjPic}
             alt="tjctf"
-            width={50}
-            height={50}
+            width={60}
+            height={60}
             className="ml-auto"
           />
         </li>
 
         <li className="flex bg-[#1f1f1f]">
-          <a href="/writeups/chall2" className="text-lg text-cyan-300 hover:underline">
-            chall2
-          </a>
+          <ul className="flex-col space-y-1 ">
+            <a href="/" className="text-lg text-cyan-300 hover:underline">
+              PicoCTF
+            </a>
+            <br></br>
+            <a href="/" className="text-sm text-cyan-300 hover:underline">
+              checkout my writeups at fiddlyfiddler.gitbook.io!!
+            </a>
+          </ul>
           <Image
-            src={picoImg}
+            src={picoPic}
             alt="picoctf"
             width={50}
             height={50}
