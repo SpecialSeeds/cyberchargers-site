@@ -12,7 +12,7 @@ export default function WriteupsPage() {
             chall1
           </a>
           <Image
-            src="/assets/tjctf.png"
+            src="@/assets/tjctf.png"
             alt="tjctf"
             width={50}
             height={50}
@@ -25,7 +25,7 @@ export default function WriteupsPage() {
             chall2
           </a>
           <Image
-            src="/assets/picoctf.jpeg"
+            src="@/assets/picoctf.jpeg"
             alt="picoctf"
             width={50}
             height={50}
