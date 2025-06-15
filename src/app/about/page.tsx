@@ -25,7 +25,7 @@ export default function AboutPage() {
           <p className="text-lg leading-relaxed text-gray-300">
             We are the Chantilly High School CTF team passionate about solving cybersecurity challenges, 
             learning new exploitation techniques, and helping others learn with us. Whether it&apos;s binary exploitation, 
-            web hacking, forensics, or crypto — we&apos;re here to capture flags and improve. test
+            web hacking, forensics, or crypto — we&apos;re here to capture flags and improve.
           </p>
         </section>
 
