@@ -1,4 +1,5 @@
 import Image from "next/image";
+import tj from "@/assets/tjctf.png";
 export default function WriteupsPage() {
   return (
     <main className="min-h-screen p-8 bg-black text-white">
@@ -12,7 +13,7 @@ export default function WriteupsPage() {
             chall1
           </a>
           <Image
-            src="@/assets/tjctf.png"
+            src={tj}
             alt="tjctf"
             width={50}
             height={50}
