@@ -27,8 +27,8 @@ export default function WriteupsPage() {
           <Image
             src={tjPic}
             alt="tjctf"
-            width={60}
-            height={60}
+            width={75}
+            height={75}
             className="ml-auto"
           />
         </li>
@@ -46,8 +46,8 @@ export default function WriteupsPage() {
           <Image
             src={picoPic}
             alt="picoctf"
-            width={50}
-            height={50}
+            width={75}
+            height={75}
             className="ml-auto"
           />
         </li>
