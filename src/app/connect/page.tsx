@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import thing1 from '@/assets/pfp/thing1.png';
 import thing2 from '@/assets/pfp/thing2.png';
 import thing3 from '@/assets/pfp/thing3.png';
