@@ -1,7 +1,5 @@
 
 import Image from "next/image";
-import picoPic from "../../assets/picoctf.jpeg";
-import tjPic from "../../assets/tjctf.png";
 export default function WriteupsPage() {
   return (
     <main className="min-h-screen p-8 bg-black text-white">
@@ -25,7 +23,7 @@ export default function WriteupsPage() {
             </a></li>
           </ul>
           <Image
-            src={tjPic}
+            src="/assets/tjctf.png"
             alt="tjctf"
             width={60}
             height={60}
@@ -44,7 +42,7 @@ export default function WriteupsPage() {
             </a></li>
           </ul>
           <Image
-            src={picoPic}
+            src="assets/picoctf.jpeg"
             alt="picoctf"
             width={50}
             height={50}
