@@ -3,7 +3,6 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image'
 import advancedPhoto from '@/assets/team_advanced.jpg';
 import { motion } from 'framer-motion';
-
 export default function AboutPage() {
   const router = useRouter();
   return (
