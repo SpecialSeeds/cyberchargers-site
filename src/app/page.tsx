@@ -12,7 +12,7 @@ export default function HomePage() {
       <section className="px-4 sm:px-6 py-12 sm:py-20 text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4">Chantilly CyberChargers</h2>
         <p className="max-w-2xl mx-auto text-base sm:text-lg lg:text-xl text-gray-700 dark:text-gray-300">
-          Chantilly High School's competitive CTF team. We train together, compete nationally, and learn skills in reverse engineering, cryptography, web exploitation, and forensics.
+          Chantilly High School&apos;s competitive CTF team. We train together, compete nationally, and learn skills in reverse engineering, cryptography, web exploitation, and forensics.
         </p>
         <a
           href="https://ctftime.org/team/271007"
@@ -58,7 +58,7 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-[#9c27ff]">Join CyberChargers</h3>
           <p className="text-base sm:text-lg text-gray-800 dark:text-gray-300">
-            All students at Chantilly are welcome. Join our next meeting or email a club officer to get started. Whether you're a beginner or advanced, there's always a challenge waiting.
+            All students at Chantilly are welcome. Join our next meeting or email a club officer to get started. Whether you&apos;re a beginner or advanced, there is always a challenge waiting.
           </p>
         </div>
       </section>
