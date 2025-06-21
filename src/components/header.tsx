@@ -18,7 +18,9 @@ export default function HeaderBar() {
         <nav className="flex space-x-4 text-sm">
           <Link href="/about" className="hover:text-purple-600 dark:hover:text-purple-400">About</Link>
           <Link href="/writeups" className="hover:text-purple-600 dark:hover:text-purple-400">Learn</Link>
+          {/*
           <Link href="/connect" className="hover:text-purple-600 dark:hover:text-purple-400">Connect</Link>
+          */}
         </nav>
       </div>
       <button

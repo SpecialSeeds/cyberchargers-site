@@ -9,6 +9,50 @@ interface DiagonalDividerProps {
 
 export default function DiagonalDivider({ flip }: DiagonalDividerProps) {
   return (
+    <div
+      className={clsx('relative h-24 w-full overflow-hidden', flip && 'rotate-180')}
+      aria-hidden
+    >
+      <motion.div
+        initial={{ opacity: 0.1 }}
+        animate={{ opacity: [0.1, 0.25, 0.1] }}
+        transition={{
+          duration: 8,
+          repeat: Infinity,
+          ease: 'easeInOut',
+        }}
+        className="absolute left-1/2 top-0 -translate-x-1/2 w-[120%] h-full"
+      >
+        <svg
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          className="w-full h-full"
+        >
+          <defs>
+            <linearGradient id="softShadow" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#ffffff" stopOpacity="0.99" />
+              <stop offset="100%" stopColor="#f7f7f7" stopOpacity="0.99" />
+            </linearGradient>
+          </defs>
+          <polygon points="0,100 100,0 100,100" fill="url(#softShadow)" />
+        </svg>
+      </motion.div>
+    </div>
+  );
+}
+
+
+/*'use client';
+
+import { motion } from 'framer-motion';
+import clsx from 'clsx';
+
+interface DiagonalDividerProps {
+  flip?: boolean;
+}
+
+export default function DiagonalDivider({ flip }: DiagonalDividerProps) {
+  return (
     <div className={clsx('relative h-24 w-full overflow-hidden', flip && 'rotate-180')}
       aria-hidden>
       <motion.svg
@@ -30,4 +74,4 @@ export default function DiagonalDivider({ flip }: DiagonalDividerProps) {
       </motion.svg>
     </div>
   );
-}
+}*/
