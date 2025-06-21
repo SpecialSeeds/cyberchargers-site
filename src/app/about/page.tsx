@@ -3,9 +3,6 @@
 import HeaderBar from '@/components/header';
 import FooterBar from '@/components/footer';
 import DiagonalDivider from '@/components/diagDivide';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import advancedPhoto from '@/assets/team_advanced.jpg';
 import CarouselComponent from '@/components/carousel';
 import LeadershipSection from '@/components/leadership';
 
@@ -17,9 +14,9 @@ export default function AboutPage() {
       <section className="px-6 py-20 text-center max-w-4xl mx-auto">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-[#9c27ff] mb-4">About CyberChargers</h1>
         <p className="text-lg text-gray-700 dark:text-gray-300">
-          We are Chantilly High School’s CTF team — passionate about solving cybersecurity challenges,
+          We are Chantilly High School&apos;s CTF team — passionate about solving cybersecurity challenges,
           diving into binary exploitation, web hacking, cryptography, and more.
-          Whether you're new or experienced, we’re here to compete, learn, and grow together.
+          Whether you&apos;re new or experienced, we&apos;re here to compete, learn, and grow together.
         </p>
       </section>
 
